@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css">
+    
+        <title>Burgers App</title>
+    </head>
+    <body>
+        <h1>Burgers App</h1>
+    
+    <p>Manage burgers eaten with this app</p>
+    
+    <!-- Pass in data from server.js -->
+    <h2>Available burgers</h2>
+    
+    <ul>
+        <li>
+         <form action="/burgers/4?_method=put" method="post">
+              <p><span class="label">ID:</span> 4</p>
+          <p><span class="label">Burger_name:</span> bison burger</p>
+          <p><span class="label">Devoured:</span> 0</p>
+    
+          <button type="submit" data-id="4" class="delburgerName">Delete</button>
+        </form>
+    
+          </li>
+        <li>
+         <form action="/burgers/5?_method=put" method="post">
+              <p><span class="label">ID:</span> 5</p>
+          <p><span class="label">Burger_name:</span> bisoc burger</p>
+          <p><span class="label">Devoured:</span> 0</p>
+    
+    
+          <button type="submit" data-id="5" class="delburgerName">Delete</button>
+        </form>
+    
+          </li>
+          <li>
+         <form action="/burgers/6?_method=put" method="post">
+              <p><span class="label">ID:</span> 6</p>
+          <p><span class="label">Burger_name:</span> Rasp burger</p>
+          <p><span class="label">Devoured:</span> 0</p>
+    
+          <button type="submit" data-id="6" class="delburgerName">Delete</button>
+        </form>
+    
+          </li>
+    </ul>
+    
+    <h2>Devoured burgers</h2>
+    <ul>
+    
+    <li>
+
+         <form action="/burgers/1?_method=put" method="post">
+              <p><span class="label">ID:</span> 1</p>
+          <p><span class="label">Burger_name:</span> hamburger</p>
+          <p><span class="label">Devoured:</span> 1</p>
+        </form>
+    
+        </li>
+
+    <li>
+
+         <form action="/burgers/2?_method=put" method="post">
+              <p><span class="label">ID:</span> 2</p>
+          <p><span class="label">Burger_name:</span> beefburger</p>
+          <p><span class="label">Devoured:</span> 1</p>
+        </form>
+    
+    </li>
+        <li>
+         <form action="/burgers/3?_method=put" method="post">
+              <p><span class="label">ID:</span> 3</p>
+          <p><span class="label">Burger_name:</span> bisonburger</p>
+          <p><span class="label">Devoured:</span> 1</p>
+        </form>
+    
+    </li>
+          <li>
+         <form action="/burgers/7?_method=put" method="post">
+              <p><span class="label">ID:</span> 7</p>
+          <p><span class="label">Burger_name:</span> buffalo burger</p>
+          <p><span class="label">Devoured:</span> 1</p>
+        </form>
+    
+        </li>
+    </ul>
+    
+    <h2>Add a Burger</h2>
+    
+    <form class="create-form" action="/burgers" method="post">
+    <div class="form-group">
+      <label for="auth">Burger:</label>
+      <input type="text" id="burgerName" name="burgerName">
+    </div>
+    <button type="submit">Add Burger</button>
+    </form>
+      
+    </body></html>
